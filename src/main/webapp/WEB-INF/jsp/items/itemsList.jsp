@@ -14,8 +14,17 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>查询商品列表</title>
+
+    <script type="text/javascript">
+        function addItem() {
+            alert("I am an alert box!!")
+        }
+    </script>
 </head>
 <body>
+
+<input type="button" onclick="addItem()" value="添加" />
+
 <form action="${pageContext.request.contextPath }/queryItems" method="post">
     查询条件：
     <table width="100%" border=1>

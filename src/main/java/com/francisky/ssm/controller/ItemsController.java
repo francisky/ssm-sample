@@ -26,7 +26,7 @@ public class ItemsController {
     private ItemsService itemsService;
 
     //商品查询列表
-    @RequestMapping("queryItems")
+    @RequestMapping("/")
     //实现 对queryItems方法和url进行映射，一个方法对应一个url
     //一般建议将url和方法写成一样
     public ModelAndView queryItems() throws Exception{
