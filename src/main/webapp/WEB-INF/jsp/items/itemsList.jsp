@@ -77,11 +77,11 @@
                 width: 800,
                 modal: true,
                 buttons: {
-                    "创建一个帐户": function () {
+                    "确认添加": function () {
                         $("#addItem").submit();
                         $(this).dialog("close");
                     },
-                    Cancel: function () {
+                    取消: function () {
                         $(this).dialog("close");
                     }
                 },
@@ -143,7 +143,9 @@
                     <td>${item.price }</td>
                     <td><fmt:formatDate value="${item.createtime}" pattern="yyyy-MM-dd HH:mm:ss"/></td>
                     <td>${item.detail }</td>
-                    <td><a href="${pageContext.request.contextPath }/itemInfo/${item.id}">修改</a></td>
+                    <td><a href="${pageContext.request.contextPath }/itemInfo/${item.id}">修改</a>
+                        <a href="${pageContext.request.contextPath }/deleteItem/${item.id}">删除</a>
+                    </td>
                 </tr>
             </c:forEach>
             </tbody>
