@@ -61,8 +61,8 @@ public class ItemsController {
 
     @RequestMapping("addItem")
     public String editItem(Items item) throws Exception {
-        System.out.println("11111111111111111111");
         System.out.println(item);
-        return "/";
+        // 重定向到 /
+        return "redirect:/";
     }
 }
