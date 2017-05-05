@@ -52,11 +52,11 @@ public class ItemsController {
         return "hello";
     }
 
-    @RequestMapping("editItems/{id}")
+    @RequestMapping("itemInfo/{id}")
     public String editItem(@PathVariable("id") Integer id, Model model) throws Exception {
         Items items = itemsService.findItemsById(id);
         model.addAttribute("item", items);
-        return "items/editItems";
+        return "items/itemInfo";
     }
 
 //    @RequestMapping("editItems")
