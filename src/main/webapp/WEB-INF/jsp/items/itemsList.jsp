@@ -120,7 +120,7 @@
         <label>查询条件：</label>
         <button id="search-item" onclick="javascript:alert('hhhh')">查询</button>
         <br/>
-        <button id="create-user">创建新用户</button>
+        <button id="create-user">添加商品</button>
     </div>
 
     <div>

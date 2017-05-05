@@ -60,8 +60,9 @@ public class ItemsController {
     }
 
     @RequestMapping("addItem")
-    public String editItem(Items item) throws Exception {
-        System.out.println(item);
+    public String editItem(Items items) throws Exception {
+        itemsService.addItems(items);
+        // 转发 -- "forward:/hello"
         // 重定向到 /
         return "redirect:/";
     }

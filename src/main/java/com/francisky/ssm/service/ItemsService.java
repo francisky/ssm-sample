@@ -32,4 +32,6 @@ public interface ItemsService {
      * @throws Exception
      */
     void updateItems(Items items) throws Exception;
+
+    void addItems(Items items) throws Exception;
 }

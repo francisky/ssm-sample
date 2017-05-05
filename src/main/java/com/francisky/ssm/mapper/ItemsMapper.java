@@ -17,4 +17,6 @@ public interface ItemsMapper {
 
     // 修改Items信息
     void updateItems(Items items) throws Exception;
+
+    void addItems(Items items) throws Exception;
 }

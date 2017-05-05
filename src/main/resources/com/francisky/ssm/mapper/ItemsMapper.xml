@@ -30,4 +30,8 @@
         SELECT items.* FROM items WHERE items.id = #{id}
     </select>
 
+    <insert id="addItems" parameterType="com.francisky.ssm.model.Items">
+        INSERT INTO items(name, price, detail) VALUES (#{name}, #{price}, #{detail})
+    </insert>
+
 </mapper>

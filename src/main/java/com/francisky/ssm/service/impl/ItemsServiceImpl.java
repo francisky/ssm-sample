@@ -37,4 +37,8 @@ public class ItemsServiceImpl implements ItemsService {
     public void updateItems(Items items) throws Exception {
 
     }
+
+    public void addItems(Items items) throws Exception {
+        itemsMapper.addItems(items);
+    }
 }
