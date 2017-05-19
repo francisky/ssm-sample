@@ -3,6 +3,12 @@
 *.iml
 *.iws
 
+# Eclipse
+.settings/
+.classpath
+.project
+bin/
+
 # Maven
 log/
 target/
